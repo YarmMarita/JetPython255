@@ -1,6 +1,6 @@
 from math import *
 
-def fig1(arg1):
+def fig5(arg1):
     s = pi * (arg1 ** 2)
     return s
 
@@ -9,7 +9,7 @@ def main():
 
     if n == 5:
         a = float(input("Введите радиус круга = "))
-        print("Площадь круга с радиусом", a, "равна кругу радиусом πR² = ", fig1(a))
+        print("Площадь круга с радиусом", a, "равна кругу радиусом πR² = ", fig5(a))
 
 
 if __name__ == '__main__':
