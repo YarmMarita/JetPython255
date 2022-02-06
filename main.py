@@ -3,6 +3,10 @@ from math import *
 def fig1(arg1):
     s = arg1 ** 2
     return s
+  
+def fig3(arg1, arg2, arg3):
+    s = arg3*(arg1+arg1)/2
+    return s
 
 def fig4(arg1, arg2):
     s = arg1 * arg2
@@ -18,6 +22,12 @@ def main():
     if n == 1:
         a = float(input("Введите сторону квадрата = "))
         print("Площадь квадрата со стороной = ", a, "равна квадрату стороны S=a² = ", fig1(a))
+
+    if n == 3:
+        a = float(input("введите сторону трапеции a="))
+        b = float(input("введите сторону трапеции b="))
+        h = float(input("введите сторону трапеции h="))
+        print("площадь трапеции со сторонами a=", a, "b=", b, "h=", h, "равна ", fig3(h*(a+b)/2))
 
     if n == 4:
         a = float(input("Введите сторону параллелограмма а = "))
